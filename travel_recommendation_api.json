@@ -22,7 +22,7 @@
         "cities": [
           {
             "name": "Tokyo, Japan",
-            "imageUrl": "img/tokyo.webp",
+            "imageUrl": "./img/tokyo.webp",
             "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
           },
           {
