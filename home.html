@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guru</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Travel Guru</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="on">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="searchBar">
+                <img src="img/search-outline.svg" alt="">
+                <input type="text" placeholder="Enter a destination or keyword" id="searchInput" list="browsers">
+                <datalist id="browsers">
+                    <option value="beaches">
+                    <option value="temples">
+                    <option value="countries">
+                  </datalist>
+                <button id="searchButton">Search</button>
+                <button id="clearButton">Clear</button>
+            </div>
+        </header>
+        <div class="main">
+            <section class="socialMedia">
+                <ul>
+                    <li><span class="icon icon-twitter"></span></li>
+                    <li><span class="icon icon-facebook"></span></li>
+                    <li><span class="icon icon-insta"></span></li>
+                    <li><span class="icon icon-youtube"></span></li>
+                </ul>
+            </section>
+            <section class="content">
+                <h2>Find your next destination</h2>
+                <p>Imagine yourself standing in a place where crystal-clear waters meet majestic mountains, or where vibrant cultures and rich histories come alive.
+                Let us help you uncover your next dream destination, where unforgettable experiences and lifelong memories await!</p>
+                <button>Book now</button>
+            </section>
+            <section class="results" id="results"></section>
+        </div>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

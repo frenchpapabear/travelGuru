@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/paris.png);
+    background-size: cover;
+}
+header{
+    background-color: #78909c;
+    color: #e3f2fd;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    h1{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 1rem;
+        width: 20dvw;
+    }
+    ul{
+        width: 50dvw;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        justify-content: center;
+        li{
+            padding: 1rem;
+            list-style: none;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #e3f2fd;
+            }
+            a:hover{
+                color:#64b5f6;
+            }
+            .on{
+                color: #64b5f6;
+                font-weight: bold;
+            }
+        }
+    }
+    .searchBar{
+        width: 25dvw;
+        display: flex;
+        justify-content: start;
+        img{
+            height: 1.5rem;
+        }
+        background-color: #eceff1;
+        padding: .5rem 0 .5rem .5rem;
+        margin-right: .5rem;
+        border-radius: 1.2rem;
+        input{
+            padding: .2rem;
+            /* width: 250px; */
+            width: 80%;
+            background-color: #eceff1;
+            border: none;
+        }
+        button{
+            padding: .3rem 1rem;
+            border-radius: 1rem;
+            border: none;
+            background-color: #78909c;
+            color: #e3f2fd;
+            margin-right: .5rem;
+        }
+    }
+}
+.main{
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(120,144,156,1));
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+.socialMedia{
+    /* padding: 2rem; */
+    img{
+        height: 3rem;
+        fill: blue;
+    }
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    ul{
+        padding: 1rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            margin-bottom: 2rem;
+        }
+    }
+}
+.content{
+    padding: 2rem;
+    width: 50%;
+    color: #e3f2fd;;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    h2{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        line-height: 1.6rem;
+        width: 70%;
+    }
+    button{
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        background-color: rgba(255,255,255,.5);
+        border: none;
+        border-radius: .5rem;
+    }
+}
+.icon{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    background-color: white;
+    mask-size: cover;
+}
+.icon-twitter{
+    mask: url('../img/logo-twitter.svg')
+}
+.icon-facebook{
+    mask: url('../img/logo-facebook.svg')
+}
+.icon-insta{
+    mask: url('../img/logo-instagram.svg')
+}
+.icon-youtube{
+    mask: url('../img/logo-youtube.svg')
+}
+.results{
+    padding: 1rem;
+}
+
+.reco{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:.6rem;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    img{
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h2,p{
+        padding: 1rem 1rem 0 1rem;
+    }
+}
